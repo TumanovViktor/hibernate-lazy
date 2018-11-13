@@ -16,6 +16,7 @@ public class LazyErrorApplicationTests {
 	@Test
 	public void contextLoads() {
 		Organization org = repo.getOrganization();
+		// Error org.hibernate.LazyInitializationException: Unable to perform requested lazy initialization
 		System.out.println(org.getOrganizationExt());
 	}
 
