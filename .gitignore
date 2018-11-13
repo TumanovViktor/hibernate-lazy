@@ -1,0 +1,44 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# Specifické věci pro uživatele
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/**/uiDesigner.xml
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/dataSources/
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/artifacts
+.idea/**/modules.xml
+
+### IntelliJ IDEA ###
+*.iws
+*.iml
+*.ipr
+/out/
+.idea/misc.xml
+.idea/vcs.xml
+.idea/codeStyles/**
+.idea/misc.xml
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/

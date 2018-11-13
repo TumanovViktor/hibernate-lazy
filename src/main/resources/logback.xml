@@ -1,0 +1,15 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+    <!-- This class logs a lot of warnings from hibernate-enhancer since hibernate 5.3.x -->
+    <logger name="org.springframework.orm.jpa.persistenceunit.ClassFileTransformerAdapter" level="error"/>
+</configuration>
