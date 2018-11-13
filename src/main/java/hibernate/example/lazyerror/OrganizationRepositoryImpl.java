@@ -17,7 +17,7 @@ public class OrganizationRepositoryImpl implements OrganizationRepository {
 	public Organization getOrganization() {
 		Organization org = (Organization) em.createQuery(
 			"from Organization as org " +
-				"inner join fetch org.extA as exta " +
+				"inner join fetch org.organizationExt as ext " +
 				"where org.organizationId=1")
 			.getSingleResult();
 		return org;
